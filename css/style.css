@@ -1,0 +1,44 @@
+
+
+.progress-bar{
+    border-top-right-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+    -webkit-box-shadow: none !important;
+  	-moz-box-shadow: none !important;
+	  box-shadow: none !important;
+}
+
+.progress{
+    border-radius: 40px !important;
+    color: #E27510 !important;
+    background-color: #CCCCCC !important;
+}
+
+.newgrounds {
+    background-color: #ffc01d !important;
+    color: black !important;
+}
+
+.twitter {
+    background-color: #1da1f2 !important;
+    color: black !important;
+}
+
+.kofi {
+    background-color: #ff5e5b !important;
+    color: white !important;
+}
+
+.flist {
+    background-color: #181F61 !important;
+    color: white !important;
+}
+
+.description-text {
+    font-size: 18px;
+}
+
+.custom-quote {
+    background-color: #6b0e03 !important;
+    color: white;
+}
