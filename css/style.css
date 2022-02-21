@@ -34,6 +34,16 @@
     color: white !important;
 }
 
+.twitch {
+    background-color: #6441A5 !important;
+    color: white !important;
+}
+
+.github {
+    background-color: #24292e !important;
+    color: white !important;
+}
+
 .description-text {
     font-size: 18px;
 }
@@ -41,4 +51,19 @@
 .custom-quote {
     background-color: #6b0e03 !important;
     color: white;
+}
+
+.main-card {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 2%,rgba(0,0,0,1) 35%);
+   -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 2%,rgba(0,0,0,1) 35%);
+}
+
+.small-card-font {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-logo {
+        padding-top: 2em;
+    }
 }

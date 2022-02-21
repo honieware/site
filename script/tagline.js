@@ -17,7 +17,10 @@ var taglines = [
 	"menace to society",
 	"that one person who uses gimp",
 	"a whole ass they/them", // hivecord
-	"all warm and runny" // king gizzard
+	"all warm and runny", // king gizzard
+	"goated with the sauce",
+	"the website ever made",
+	"evil and a fucked up"
 ];
 
 let randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
