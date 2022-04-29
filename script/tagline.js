@@ -20,7 +20,8 @@ var taglines = [
 	"all warm and runny", // king gizzard
 	"goated with the sauce",
 	"the website ever made",
-	"evil and a fucked up"
+	"evil and a fucked up",
+	"hearthy should be a word" // fuck off lia
 ];
 
 let randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
