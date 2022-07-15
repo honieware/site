@@ -40,10 +40,13 @@
 	<meta name="description" content="Honie's little corner on cyberspace 🐝">
 	
   </head>
-  <body style="background-color: #831C05;">
+  <body>
 	
 	<!-- Navbar -->
-	<div style="background-color: #f45a0f;">
+	<div style="background-color: #fa782d">
+	<div id="toggle" class="toggle" onclick="toggleMode()">
+		🌞
+	</div>
 	<div class="container pb-3 pt-3">
 		<center>
 			<img src="images/honielogo.png" alt="logo" style="width: 20em; height: auto;">
@@ -51,7 +54,7 @@
 		</center>
 	</div>
 	</div>
-	<img src="images/wave.png" style="margin-top: -15px; width: 100%;">
+	<img src="images/wave.png" style="margin-top: -15px; width: 100%; filter: invert(73%) sepia(51%) saturate(5958%) hue-rotate(341deg) brightness(100%) contrast(97%);">
 	
 
     <div class="container">
@@ -63,7 +66,9 @@
 
 			<div class="container">
 
-				<!-- Huge Button (EDITS) -->
+				<!-- Huge Button -->
+				<!-- COMBIES -->
+				<!--
 				<div class="col-md-12">
 					<a href="https://youtu.be/RT7tb92eq8o">
 						<div class="card bg-dark text-white image-container">
@@ -75,16 +80,17 @@
 						</div>
 					</a>
 				</div>
+				-->
 
 				<!-- EDIT COMMS -->
-				<!--
 				<div class="col-md-12">
 					<a href="https://ko-fi.com/honie/commissions">
 						<div class="card bg-dark text-white image-container">
 							<img class="card-img" src="images/editcommnsfw.png" alt="Card image">
 							<div class="card-img-overlay d-flex flex-column">
-								<h1 class="card-title mt-auto">edit commissions <span class="badge bg-danger">full</span></h1>
+								<h1 class="card-title mt-auto">edit commissions <!--<span class="badge bg-danger">full</span>--></h1>
 								<p class="card-text">support me and get some top-quality roleplaying edits over at my ko-fi page</p>
+								<!--
 								<div class="progress" style="height: 15px;">
 									<div
 									class="progress-bar bg-warning"
@@ -95,11 +101,11 @@
 									aria-valuemax="100"
 									></div>
 								</div>
+								-->
 							</div>
 						</div>
 					</a>
 				</div>
-				-->
 
 				<div class="row">
 
@@ -165,7 +171,6 @@
 					-->
 
 					<!-- Github -->
-					<!--
 					<div class="col-md-6 pt-4">
 						<a href="#">
 							<div class="card text-body github mb-3">
@@ -175,7 +180,7 @@
 										<div class="card-body">
 											<h3 class="card-title">github</h3>
 											<p class="card-text small-card-font">
-												wait no it isnt ready yet
+												coding related projects
 											</p>
 										</div>
 									</div>
@@ -183,7 +188,6 @@
 							</div>
 						</a>
 					</div>
-					-->
 
 					<!-- Ko-fi -->
 					<div class="col-md-6 pt-4">
@@ -231,7 +235,7 @@
 			<div class="container pt-5">
 				<div class="row d-flex justify-content-center align-items-center h-100">
 				<div class="col-11">
-					<figure class="note custom-quote p-4">
+					<figure class="note custom-quote p-4" id="custom-quote">
 					<blockquote class="blockquote description-text">
 						<p>
 						<b>hey there!</b> the name's Honie, and i'm a bee stuck on the Internet.<br><br>
@@ -284,7 +288,9 @@
 		</div>
 	</div>
 
+	<script src="script/cookies.js"></script>
 	<script src="script/adult.js"></script>
 	<script src="script/tagline.js"></script>
+	<script src="script/toggle.js"></script>
 	</body>
 </html>

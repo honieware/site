@@ -1,4 +1,18 @@
+.toggle {
+    padding: 0.5em;
+    position: absolute;
+    font-size: 2em;
+}
 
+body {
+    background-color: #242222;
+    color: #f5f5f5;
+}
+
+.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
 
 .progress-bar{
     border-top-right-radius: 40px !important;
@@ -26,22 +40,22 @@
 
 .kofi {
     background-color: #ff5e5b !important;
-    color: white !important;
+    color: #f5f5f5 !important;
 }
 
 .flist {
     background-color: #181F61 !important;
-    color: white !important;
+    color: #f5f5f5 !important;
 }
 
 .twitch {
     background-color: #6441A5 !important;
-    color: white !important;
+    color: #f5f5f5 !important;
 }
 
 .github {
     background-color: #24292e !important;
-    color: white !important;
+    color: #f5f5f5 !important;
 }
 
 .description-text {
@@ -49,13 +63,26 @@
 }
 
 .custom-quote {
-    background-color: #6b0e03 !important;
-    color: white;
+    background-color: #1b1a1a !important;
+    color: #f5f5f5;
+}
+
+.custom-quote-light {
+    background-color: #dfd7d7 !important;
+    color: #0e0d0d;
+}
+
+.card {
+    box-shadow: 0px 3px 10px #1b1a1a;
+}
+
+.card-light {
+    box-shadow: 0px 3px 10px #746f6f;
 }
 
 .main-card {
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 2%,rgba(0,0,0,1) 35%);
-   -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 2%,rgba(0,0,0,1) 35%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 2%,rgba(0,0,0,1) 50%);
+   -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 2%,rgba(0,0,0,1) 50%);
 }
 
 .small-card-font {

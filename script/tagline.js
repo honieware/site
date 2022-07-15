@@ -1,4 +1,5 @@
 var taglines = [
+	// "why are you looking at my code",
 	"what do you mean this character turns me on?!",
 	"jacked at all trades",
 	"the queen bee",
@@ -21,7 +22,11 @@ var taglines = [
 	"goated with the sauce",
 	"the website ever made",
 	"evil and a fucked up",
-	"hearthy should be a word" // fuck off lia
+	"hearthy should be a word", // fuck off lia
+	"the bee with thigh highs and pronouns",
+	"add me in vrchat",
+	"just a little bee", // marcy
+	"buzz buzz motherfucker"
 ];
 
 let randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
