@@ -41,7 +41,14 @@
 	
   </head>
   <body>
-	
+
+	<!-- Redirect notice -->
+	<div class="pb-2 pt-4" id="redirect-notice" style="display:none; background-color: #d11837">
+		<center>
+			<h6>honie.buzz is now honiemun.com! the original website will stop functioning come <b>october 16th, 2022.</b></h6>
+		</center>
+	</div>
+
 	<!-- Navbar -->
 	<div style="background-color: #fa782d">
 	<div id="toggle" class="toggle" onclick="toggleMode()">
@@ -122,6 +129,10 @@
 
 				<div class="row">
 
+				</div>
+
+				<div class="row">
+
 					<!-- Newgrounds -->
 					<div class="col-md-6 pt-4">
 						<a href="https://honiemun.newgrounds.com">
@@ -132,7 +143,7 @@
 										<div class="card-body">
 											<h3 class="card-title">newgrounds</h3>
 											<p class="card-text small-card-font">
-												art and games / the meat of it
+												art and games. start here!
 											</p>
 										</div>
 									</div>
@@ -152,7 +163,8 @@
 										<div class="card-body">
 											<h3 class="card-title">twitter</h3>
 											<p class="card-text small-card-font">
-												drawings, projects and ramblings
+												drawings and projects 
+												<object><a href="https://twitter.com/honieposting" class="badge badge-pill badge-info">(or silly rambling)</a></object>
 											</p>
 										</div>	
 									</div>
@@ -179,7 +191,7 @@
 							</div>
 						</a>
 					</div>
-
+					
 					<!-- Ko-fi -->
 					<div class="col-md-6 pt-4">
 						<a href="https://ko-fi.com/honie">
@@ -188,9 +200,10 @@
 									<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/kofi.png" style="width:48px"/></div>
 									<div class="col">
 										<div class="card-body">
+											<i class="shiny"></i>
 											<h3 class="card-title">ko-fi</h3>
 											<p class="card-text small-card-font">
-												get a commission, or toss me a coin!
+												like what you see? toss me a coin!
 											</p>
 										</div>
 									</div>
@@ -198,8 +211,8 @@
 							</div>
 						</a>
 					</div>
-
 					<!-- Twitch -->
+					<!--
 					<div class="col-md-6 pt-4">
 						<a href="https://twitch.tv/honiemun">
 							<div class="card text-body twitch mb-3">
@@ -217,8 +230,10 @@
 							</div>
 						</a>
 					</div>
+					-->
 
 					<!-- F-List -->
+					<!--
 					<div class="col-md-6 pt-4">
 						<a href="https://f-list.net/c/Honiemun">
 							<div class="card text-body flist mb-3">
@@ -236,6 +251,7 @@
 							</div>
 						</a>
 					</div>
+					-->
 
 				</div>
 			</div>
@@ -301,5 +317,6 @@
 	<script src="script/adult.js"></script>
 	<script src="script/tagline.js"></script>
 	<script src="script/toggle.js"></script>
+	<script src="script/redirect.js"></script>
 	</body>
 </html>
