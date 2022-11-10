@@ -26,7 +26,12 @@ var taglines = [
 	"the bee with thigh highs and pronouns",
 	"add me in vrchat",
 	"just a little bee", // marcy
-	"buzz buzz motherfucker"
+	"buzz buzz motherfucker",
+	"buzzing it down insect style",
+	"keep refreshing the page for free robux",
+	"rated AO",
+	"> be me  > me bee",
+	"don't check the page's uptime"
 ];
 
 let randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
