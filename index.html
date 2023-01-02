@@ -55,18 +55,19 @@
 
 	<!-- Navbar -->
 	<div style="background-color: #fa782d">
-	<div id="toggle" class="toggle" onclick="toggleMode()">
-		🌞
+
+		<div id="toggle" class="toggle" onclick="toggleMode()">
+			🌞
+		</div>
+		<div class="container pb-3 pt-3">
+			<center>
+				<img src="images/honielogo.png" alt="logo" style="width: 20em; height: auto;">
+				<h4 style="color: white" class="pt-2" id="tagline"> </h4>
+			</center>
+		</div>
 	</div>
-	<div class="container pb-3 pt-3">
-		<center>
-			<img src="images/honielogo.png" alt="logo" style="width: 20em; height: auto;">
-			<h4 style="color: white" class="pt-2" id="tagline"> </h4>
-		</center>
-	</div>
-	</div>
-	<img src="images/wave.png" style="margin-top: -15px; width: 100%; filter: invert(73%) sepia(51%) saturate(5958%) hue-rotate(341deg) brightness(100%) contrast(97%);">
 	
+	<div class="wave"></div>
 
     <div class="main-container container">
       <div class="row">
@@ -131,13 +132,15 @@
 					</a>
 				</div>
 
+				
 				<div class="row">
-
+					<div id="buttons"></div>
 				</div>
 
+				<!--
 				<div class="row">
 
-					<!-- Newgrounds -->
+					<!- - Newgrounds - ->
 					<div class="col-md-6 pt-4">
 						<a href="https://honiemun.newgrounds.com">
 							<div class="card text-body newgrounds mb-3">
@@ -157,7 +160,7 @@
 					</div>
 
 
-					<!-- Twitter -->
+					<!- - Twitter - ->
 					<div class="col-md-6 pt-4">
 						<a href="https://twitter.com/honiemun">
 							<div class="card text-body twitter mb-3">
@@ -177,7 +180,7 @@
 						</a>
 					</div>
 					
-					<!-- Tumblr / Blog -->
+					<!- - Tumblr / Blog - ->
 					<div class="col-md-6 pt-4">
 						<a href="https://hideout.honiemun.com">
 							<div class="card text-body tumblr mb-3">
@@ -196,7 +199,7 @@
 						</a>
 					</div>
 
-					<!-- Github -->
+					<!- - Github - ->
 					<div class="col-md-6 pt-4">
 						<a href="https://github.com/honiemun">
 							<div class="card text-body github mb-3">
@@ -217,7 +220,7 @@
 					
 					<br>
 
-					<!-- Ko-fi -->
+					<!- - Ko-fi - ->
 					<center>
 						<p class="likeit pt-3">like what you see?</p>
 
@@ -243,8 +246,7 @@
 							</a>
 						</div>
 					</center>
-					<!-- Twitch -->
-					<!--
+					<!- - Twitch - ->
 					<div class="col-md-6 pt-4">
 						<a href="https://twitch.tv/honiemun">
 							<div class="card text-body twitch mb-3">
@@ -262,10 +264,8 @@
 							</div>
 						</a>
 					</div>
-					-->
 
-					<!-- F-List -->
-					<!--
+					<!- - F-List - ->
 					<div class="col-md-6 pt-4">
 						<a href="https://f-list.net/c/Honiemun">
 							<div class="card text-body flist mb-3">
@@ -283,10 +283,10 @@
 							</div>
 						</a>
 					</div>
-					-->
 
 				</div>
 			</div>
+			-->
 
 			<!-- Bio -->
 			<div class="container pt-5">
@@ -344,7 +344,8 @@
 		</div>
 		</div>
 	</div>
-
+	
+	<script src="script/socialmedia.js"></script>
 	<script src="script/cookies.js"></script>
 	<script src="script/adult.js"></script>
 	<script src="script/tagline.js"></script>
