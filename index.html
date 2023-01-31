@@ -46,309 +46,416 @@
   </head>
   <body>
 
-	<!-- Redirect notice -->
-	<div class="pb-2 pt-4" id="redirect-notice" style="display:none; background-color: #d11837">
-		<center>
-			<h6>honie.buzz is now honiemun.com! <i>(some stuff might be a little bit broken - hang on tight!)</i></h6>
-		</center>
-	</div>
+	<div class="heads-up" id="heads-up">
+		<div class="card-heads-up card bg-dark">
+			<h1>just a heads-up</h1>
 
-	<!-- Navbar -->
-	<div style="background-color: #fa782d">
-	<div id="toggle" class="toggle" onclick="toggleMode()">
-		🌞
-	</div>
-	<div class="container pb-3 pt-3">
-		<center>
-			<img src="images/honielogo.png" alt="logo" style="width: 20em; height: auto;">
-			<h4 style="color: white" class="pt-2" id="tagline"> </h4>
-		</center>
-	</div>
-	</div>
-	<img src="images/wave.png" style="margin-top: -15px; width: 100%; filter: invert(73%) sepia(51%) saturate(5958%) hue-rotate(341deg) brightness(100%) contrast(97%);">
-	
+			<p class="pt-3">
+				this page has links to adult sites.<br>
+				are you over eighteen years of age<br>
+				and okay with seeing some risqué content?<br>
+				<i>(otherwise, we'll hide 'em away from you!)</i>
+			</p>
 
-    <div class="main-container container">
-      <div class="row">
-		<div class="col-md-2">
+			<div class="row pt-4">
+				<div class="col-md-6">
+					<button type="button" class="btn btn-primary btn-heads-up" onclick="showFullPage('true')">show +18 content</button>
+				</div>
+				<div class="col-md-6">
+					<button type="button" class="btn btn-dark btn-heads-up" onclick="showFullPage('false')">hide +18 content</button>
+				</div>
+
+				<small style="color:#494545" class="pt-2">we use cookies to not show you this again</p>
+			</div>
 		</div>
-		<div class="col-md-8">
-			
+	</div>
 
-			<div class="container">
+	<div class="blurred" id="blurred">
+		<!-- Redirect notice -->
+		<div class="pb-2 pt-4" id="redirect-notice" style="display:none; background-color: #d11837">
+			<center>
+				<h6>honie.buzz is now honiemun.com! <i>(some stuff might be a little bit broken - hang on tight!)</i></h6>
+			</center>
+		</div>
 
-				<!-- Huge Button -->
-				<!-- COMBIES -->
-				<!--
-				<div class="col-md-12">
-					<a href="https://youtu.be/RT7tb92eq8o">
-						<div class="card bg-dark text-white image-container">
-							<img class="card-img main-card" src="images/combies.jpg" alt="Card image">
-							<div class="card-img-overlay d-flex flex-column">
-								<h1 class="card-title mt-auto">the combies</h1>
-								<p class="card-text">discord's greatest awards show. uhm, probably</p>
+		<!-- Navbar -->
+		<div style="background-color: #fa782d">
+		<div id="toggle" class="toggle" onclick="toggleMode()">
+			🌞
+		</div>
+		<div class="container pb-3 pt-3">
+			<center>
+				<img src="images/honielogo.png" alt="logo" style="width: 20em; height: auto;">
+				<h4 style="color: white" class="pt-2" id="tagline"> </h4>
+			</center>
+		</div>
+		</div>
+		<img src="images/wave.png" style="margin-top: -15px; width: 100%; filter: invert(73%) sepia(51%) saturate(5958%) hue-rotate(341deg) brightness(100%) contrast(97%);">
+		
+
+		<div class="main-container container">
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-8">
+				
+
+				<div class="container">
+
+					<!-- Huge Button -->
+					<!-- COMBIES -->
+					<!--
+					<div class="col-md-12">
+						<a href="https://youtu.be/RT7tb92eq8o">
+							<div class="card bg-dark text-white image-container">
+								<img class="card-img main-card" src="images/combies.jpg" alt="Card image">
+								<div class="card-img-overlay d-flex flex-column">
+									<h1 class="card-title mt-auto">the combies</h1>
+									<p class="card-text">discord's greatest awards show. uhm, probably</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					-->
+
+					<!-- EDIT COMMS -->
+					<!--
+					<div class="col-md-12">
+						<a href="https://ko-fi.com/honie/commissions">
+							<div class="card bg-dark text-white image-container">
+								<img class="card-img" src="images/editcommnsfw.png" alt="Card image">
+								<div class="card-img-overlay d-flex flex-column">
+									<h1 class="card-title mt-auto">edit commissions <span class="badge bg-danger">full</span></h1>
+									<p class="card-text">support me and get some top-quality roleplaying edits over at my ko-fi page</p>
+									<div class="progress" style="height: 15px;">
+										<div
+										class="progress-bar bg-warning"
+										role="progressbar"
+										style="width: 100%;"
+										aria-valuenow="100"
+										aria-valuemin="0"
+										aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					-->
+
+					<!-- BOARD SWEEPERS -->
+					<div class="col-md-12">
+						<a href="https://honieware.itch.io/board-sweepers-jam">
+							<div class="card bg-dark text-white image-container">
+								<img class="card-img card-gradient img-fluid headliner-card" src="images/boardsweep.png" alt="Card image">
+								<div class="card-img-overlay d-flex flex-column">
+									<h1 class="card-title mt-auto">board sweepers <span class="badge bg-warning">game jam</span></h1>
+									<p class="card-text">defeat the lesser board games and toss your way to victory</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="row pt-3">
+						<div class="carousel-container">
+
+							<button id="slideBack" type="button" class="btn btn-primary btn-circle btn-carousel btn-left btn-xl"><i class="fas fa-arrow-left"></i></button>
+							<button id="slide" type="button" class="btn btn-primary btn-circle btn-carousel btn-right btn-xl"><i class="fas fa-arrow-right"></i></button>
+							
+							<div id="carousel">
+
+								<!-- RETO -->
+								<div class="item">
+									<a href="https://top.gg/bot/591466921812164608">
+										<div class="card bg-dark text-white image-container">
+											<img class="card-img-item card-gradient headliner-card" src="images/reto.png" alt="Card image">
+											<div class="card-img-overlay d-flex flex-column">
+												<h2 class="card-title mt-auto">reto</h2>
+												<p class="card-text">karma & starboard bot</p>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<!-- BOARD SWEEPERS -->
+								<div class="item">
+									<a href="https://honieware.itch.io/board-sweepers-jam">
+										<div class="card bg-dark text-white image-container">
+											<img class="card-img-item card-gradient headliner-card" src="images/boardsweep.png" alt="Card image">
+											<div class="card-img-overlay d-flex flex-column">
+												<h2 class="card-title mt-auto">board sweepers</h2>
+												<p class="card-text">dice-flinging horde action game</p>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<!-- ETHERJAM -->
+								<div class="item">
+									<a href="https://etherjam.itch.io">
+										<div class="card bg-dark text-white image-container">
+											<img class="card-img-item card-gradient headliner-card" src="images/etherjam.png" alt="Card image">
+											<div class="card-img-overlay d-flex flex-column">
+												<h2 class="card-title mt-auto">etherjam</h2>
+												<p class="card-text">game dev collective</p>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<!-- THE COMBIES 2021 -->
+								<div class="item">
+									<a href="https://youtu.be/RT7tb92eq8o">
+										<div class="card bg-dark text-white image-container">
+											<img class="card-img-item card-gradient headliner-card" src="images/combies.jpg" alt="Card image">
+											<div class="card-img-overlay d-flex flex-column">
+												<h2 class="card-title mt-auto">the combies (2021)</h2>
+												<p class="card-text">hivecord's awards ceremony</p>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<!-- HONIE EDIT FOLDER -->
+								<div class="item censored">
+									<a href="https://drive.google.com/drive/folders/1Z-UMdpLaDEQfRCtz56cJg2pAQEswTHo3?usp=sharing">
+										<div class="card bg-dark text-white image-container">
+											<img class="card-img-item card-gradient headliner-card" src="images/editfolder.png" alt="Card image">
+											<div class="card-img-overlay d-flex flex-column">
+												<h2 class="card-title mt-auto">honie's edit folder</h2>
+												<p class="card-text">roleplay edits, free-to-use</p>
+											</div>
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
-					</a>
-				</div>
-				-->
-
-				<!-- EDIT COMMS -->
-				<!--
-				<div class="col-md-12">
-					<a href="https://ko-fi.com/honie/commissions">
-						<div class="card bg-dark text-white image-container">
-							<img class="card-img" src="images/editcommnsfw.png" alt="Card image">
-							<div class="card-img-overlay d-flex flex-column">
-								<h1 class="card-title mt-auto">edit commissions <span class="badge bg-danger">full</span></h1>
-								<p class="card-text">support me and get some top-quality roleplaying edits over at my ko-fi page</p>
-								<div class="progress" style="height: 15px;">
-									<div
-									class="progress-bar bg-warning"
-									role="progressbar"
-									style="width: 100%;"
-									aria-valuenow="100"
-									aria-valuemin="0"
-									aria-valuemax="100"
-									></div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				-->
-
-				<!-- BOARD SWEEPERS -->
-				<div class="col-md-12">
-					<a href="https://honieware.itch.io/board-sweepers-jam">
-						<div class="card bg-dark text-white image-container">
-							<img class="card-img img-fluid headliner-card" src="images/boardsweep.png" alt="Card image">
-							<div class="card-img-overlay d-flex flex-column">
-								<h1 class="card-title mt-auto">board sweepers <span class="badge bg-warning">game jam</span></h1>
-								<p class="card-text">defeat the lesser board games and toss your way to victory</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="row">
-
-				</div>
-
-				<div class="row">
-
-					<!-- Newgrounds -->
-					<div class="col-md-6 pt-4">
-						<a href="https://honiemun.newgrounds.com">
-							<div class="card text-body newgrounds mb-3">
-								<div class="row">
-									<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="svg/newgrounds.svg" style="width:48px"/></div>
-									<div class="col">
-										<div class="card-body">
-											<h3 class="card-title">newgrounds</h3>
-											<p class="card-text small-card-font">
-												art and games. start here!
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
 					</div>
 
+					<div class="row">
 
-					<!-- Twitter -->
-					<div class="col-md-6 pt-4">
-						<a href="https://twitter.com/honiemun">
-							<div class="card text-body twitter mb-3">
-								<div class="row">
-									<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><i class="fab fa-twitter fa-3x"></i></div>
-									<div class="col">
-										<div class="card-body">
-											<h3 class="card-title">twitter</h3>
-											<p class="card-text small-card-font">
-												drawings and projects 
-												<object><a href="https://twitter.com/honieposting" class="badge badge-pill badge-info">(or silly ramblings)</a></object>
-											</p>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					
-					<!-- Tumblr / Blog -->
-					<div class="col-md-6 pt-4">
-						<a href="https://hideout.honiemun.com">
-							<div class="card text-body tumblr mb-3">
-								<div class="row">
-									<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><i class="fab fa-tumblr fa-3x"></i></div>
-									<div class="col">
-										<div class="card-body">
-											<h3 class="card-title">honie's hideout </h3>
-											<p class="card-text small-card-font">
-												sometimes a blog, always unhinged
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<!-- Github -->
-					<div class="col-md-6 pt-4">
-						<a href="https://github.com/honiemun">
-							<div class="card text-body github mb-3">
-								<div class="row">
-									<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/github.png" style="width:48px"/></div>
-									<div class="col">
-										<div class="card-body">
-											<h3 class="card-title">github</h3>
-											<p class="card-text small-card-font">
-												coding related nerd stuff
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					
-					<br>
-
-					<!-- Ko-fi -->
-					<center>
-						<p class="likeit pt-3">like what you see?</p>
-
-						<div class="col-md-6">
-							<a href="https://ko-fi.com/honie">
-								<div class="card text-body kofi mb-3">
+						<!-- Newgrounds -->
+						<div class="col-md-6 pt-4 censored">
+							<a href="https://honiemun.newgrounds.com">
+								<div class="card text-body newgrounds mb-3">
 									<div class="row">
-										<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/kofi.png" style="width:48px"/></div>
+										<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="svg/newgrounds.svg" style="width:44px"/></div>
 										<div class="col">
 											<div class="card-body">
-												<i class="shiny"></i>
-												<left>
-													<h4 class="card-title">ko-fi</h4>
-													<p class="card-text small-card-font">
-														toss me a coin!
-														<object><a href="https://ko-fi.com/honie/commissions" class="badge badge-pill badge-danger">(or get a commission)</a></object>
-													</p>
-												</left>
+												<h3 class="card-title">newgrounds</h3>
+												<p class="card-text small-card-font">
+													silly & kinky drawings
+												</p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</a>
 						</div>
-					</center>
-					<!-- Twitch -->
-					<!--
-					<div class="col-md-6 pt-4">
-						<a href="https://twitch.tv/honiemun">
-							<div class="card text-body twitch mb-3">
-								<div class="row">
-									<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/twitch.png" style="width:48px"/></div>
-									<div class="col">
-										<div class="card-body">
-											<h3 class="card-title">twitch</h3>
-											<p class="card-text small-card-font">
-												v-tuber style live experiments
-											</p>
+
+						<!-- Honieware / Itchio -->
+						<div class="col-md-6 pt-4">
+							<a href="https://honieware.itch.io">
+								<div class="card text-body honieware mb-3">
+									<div class="row">
+										<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/honieware.png" style="width:44px"/></div>
+										<div class="col">
+											<div class="card-body">
+												<h3 class="card-title">honieware</h3>
+												<p class="card-text small-card-font">
+													bite-sized homemade games
+												</p>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</a>
-					</div>
-					-->
+							</a>
+						</div>
 
-					<!-- F-List -->
-					<!--
-					<div class="col-md-6 pt-4">
-						<a href="https://f-list.net/c/Honiemun">
-							<div class="card text-body flist mb-3">
-								<div class="row">
-									<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/flist.png" style="width:48px"/></div>
-									<div class="col">
-										<div class="card-body">
-											<h3 class="card-title">f-list</h3>
-											<p class="card-text small-card-font">
-												where my rp past comes to die
-											</p>
+						<!-- Twitter -->
+						<div class="col-md-6 pt-4 censored">
+							<a href="https://twitter.com/honiemun">
+								<div class="card text-body twitter mb-3">
+									<div class="row">
+										<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><i class="fab fa-twitter fa-3x"></i></div>
+										<div class="col">
+											<div class="card-body">
+												<h3 class="card-title">twitter</h3>
+												<p class="card-text small-card-font">
+													art and projects
+													<object><a href="https://twitter.com/honieposting" class="badge badge-pill badge-info">(or silly ramblings)</a></object>
+												</p>
+											</div>	
 										</div>
 									</div>
 								</div>
+							</a>
+						</div>
+						
+						<!-- Instagram -->
+						<div class="col-md-6 pt-4">
+							<a href="https://instagram.com/honiemun">
+								<div class="card text-body instagram mb-3">
+									<div class="row">
+										<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><i class="fab fa-instagram fa-3x"></i></div>
+										<div class="col">
+											<div class="card-body">
+												<h3 class="card-title">instagram</h3>
+												<p class="card-text small-card-font">
+													safe-for-work art gallery
+												</p>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<!-- Tumblr / Blog -->
+						<div class="col-md-6 pt-4">
+							<a href="https://hideout.honiemun.com">
+								<div class="card text-body tumblr mb-3">
+									<div class="row">
+										<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><i class="fab fa-tumblr fa-3x"></i></div>
+										<div class="col">
+											<div class="card-body">
+												<h3 class="card-title">honie's hideout </h3>
+												<p class="card-text small-card-font">
+													unhinged brain-dump
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<!-- Github -->
+						<div class="col-md-6 pt-4">
+							<a href="https://github.com/honiemun">
+								<div class="card text-body github mb-3">
+									<div class="row">
+										<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/github.png" style="width:48px"/></div>
+										<div class="col">
+											<div class="card-body">
+												<h3 class="card-title">github</h3>
+												<p class="card-text small-card-font">
+													code related nerd stuff
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						
+						<br>
+
+						<!-- Ko-fi -->
+						<center>
+							<p class="likeit pt-3">like what you see?</p>
+
+							<div class="col-md-6">
+								<a href="https://ko-fi.com/honie">
+									<div class="card text-body kofi mb-3">
+										<div class="row">
+											<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/kofi.png" style="width:48px"/></div>
+											<div class="col">
+												<div class="card-body">
+													<i class="shiny"></i>
+													<left>
+														<h4 class="card-title">ko-fi</h4>
+														<p class="card-text small-card-font">
+															toss me a coin!
+															<object><a href="https://ko-fi.com/honie/commissions" class="badge badge-pill badge-danger">(or get a commission)</a></object>
+														</p>
+													</left>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
 							</div>
-						</a>
+						</center>
+						<!-- Twitch -->
+						<!--
+						<div class="col-md-6 pt-4">
+							<a href="https://twitch.tv/honiemun">
+								<div class="card text-body twitch mb-3">
+									<div class="row">
+										<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/twitch.png" style="width:48px"/></div>
+										<div class="col">
+											<div class="card-body">
+												<h3 class="card-title">twitch</h3>
+												<p class="card-text small-card-font">
+													v-tuber style live experiments
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						-->
+
+						<!-- F-List -->
+						<!--
+						<div class="col-md-6 pt-4">
+							<a href="https://f-list.net/c/Honiemun">
+								<div class="card text-body flist mb-3">
+									<div class="row">
+										<div class="col-md-2 col-sm-4 d-flex align-items-center px-5 card-logo"><img src="images/flist.png" style="width:48px"/></div>
+										<div class="col">
+											<div class="card-body">
+												<h3 class="card-title">f-list</h3>
+												<p class="card-text small-card-font">
+													where my rp past comes to die
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						-->
+
 					</div>
-					-->
-
 				</div>
-			</div>
 
-			<!-- Bio -->
-			<div class="container pt-5">
-				<div class="row d-flex justify-content-center align-items-center h-100">
-				<div class="col-11">
-					<figure class="note custom-quote p-4" id="custom-quote">
-					<blockquote class="blockquote description-text">
-						<p>
-						<b>hey there!</b> the name's Honie, and i'm a bee stuck on the Internet.<br><br>
+				<!-- Bio -->
+				<div class="container pt-5">
+					<div class="row d-flex justify-content-center align-items-center h-100">
+					<div class="col-11">
+						<figure class="note custom-quote p-4" id="custom-quote">
+						<blockquote class="blockquote description-text">
+							<p>
+							<b>hey there!</b> the name's Honie, and i'm a bee stuck on the Internet.<br><br>
 
-						i do a little bit of everything — i dabble in drawing, both the erotic and SFW kind,
-						graphic design, coding and web development, and a generous dose of smut writing —
-						all in the service of getting you to question what gets you hot and bothered.<br><br>
+							i do a little bit of everything — i dabble in drawing, both the erotic and SFW kind,
+							graphic design, coding and web development, and a generous dose of smut writing —
+							all in the service of getting you to question what gets you hot and bothered.<br><br>
 
-						if you like my work, check out one of the links above to see more!
-						i'm always working on new projects, and on more general terms up to some mischief.
-						</p>
-					</blockquote>
-					</figure>
+							if you like my work, check out one of the links above to see more!
+							i'm always working on new projects, and on more general terms up to some mischief.
+							</p>
+						</blockquote>
+						</figure>
 
+						</div>
 					</div>
 				</div>
+
+				<div class="pb-5"></div>
+
 			</div>
-
-			<div class="pb-5"></div>
-
-		</div>
-		<div class="col-md-2">
-		</div>
-
-	<!-- Modal -->
-	<div
-	class="modal fade"
-	id="adultModal"
-	data-mdb-backdrop="static"
-	tabindex="-1"
-	aria-labelledby="adultModalLabel"
-	aria-hidden="true"
-	>
-	<div class="modal-dialog">
-		<div class="modal-content">
-		<div class="modal-header">
-			<h5 class="modal-title" id="adultModalLabel"><i class="fas fa-exclamation-triangle"></i></h5>
-		</div>
-		<div class="modal-body"><p style="color: white"></p>this page contains links to adult content.<br>
-								if you are underage or do not want to see adult material, it's best you turn your back now!</b></i></i><br><br>
-								<small style="color:#494545"><i>additionally - this page uses cookies so you don't see this message again.</i></small></div></p>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-warning" data-mdb-dismiss="modal">
-			awesome, this is my jam
-			</button>
-			<a href="https://www.disney.com/">
-				<button type="button" class="btn btn-danger">i don't want to see porn</button>
-			</a>
-		</div>
 		</div>
 	</div>
 
 	<script src="script/cookies.js"></script>
-	<script src="script/adult.js"></script>
 	<script src="script/tagline.js"></script>
-	<script src="script/toggle.js"></script>
 	<script src="script/redirect.js"></script>
+	<script src="script/slider.js"></script>
+	<script src="script/adult.js"></script>
+	<script src="script/toggle.js"></script>
 	</body>
 </html>

@@ -45,9 +45,18 @@ body {
     background-color: #CCCCCC !important;
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #fa782d !important;
+}
+
 .newgrounds {
     background-color: #ffc01d !important;
     color: black !important;
+}
+
+.honieware {
+    background-color: #ef3a7f !important;
+    color: white !important;
 }
 
 .twitter {
@@ -77,6 +86,11 @@ body {
 
 .github {
     background-color: #24292e !important;
+    color: #f5f5f5 !important;
+}
+
+.instagram {
+    background-color: #833AB4 !important;
     color: #f5f5f5 !important;
 }
 
@@ -111,13 +125,36 @@ body {
     text-align: left;
 }
 
-.main-card {
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 2%,rgba(0,0,0,1) 50%);
-   -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 2%,rgba(0,0,0,1) 50%);
+.image-container img {
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
 }
 
 .small-card-font {
     font-size: 14px;
+}
+
+/* For the initial warning*/
+.blurred {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px) brightness(25%);
+}
+
+/* For adult content */
+.censored {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px) brightness(35%);
+}
+
+.censored a {
+    cursor: default;
+    pointer-events: none;   
 }
 
 @media only screen and (max-width: 600px) {
@@ -216,3 +253,114 @@ body {
         80% {opacity: 0.0}
         100% { left: 82%}
     }
+
+    /* carousel */
+
+    #carousel {
+        display: flex;
+        overflow-x: auto;
+        -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+        scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+      }
+      
+      #carousel::-webkit-scrollbar {
+        display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+        -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+      }
+      
+      .item {
+        min-width: 300px;
+        min-height: 200px;
+        margin: 15px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .item img {
+        object-fit: cover;
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%
+      }
+
+      .card-img-item {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .btn-circle.btn-xl {
+        width: 50px;
+        height: 50px;
+        padding: 13px 18px;
+        border-radius: 60px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .btn-carousel {
+        position: absolute; /* relative to outer container */
+        background-color: pink;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+    .btn-left {
+        margin-left: -20px;
+    }
+    .btn-right {
+        left: 90%;
+        margin-right: -20px;
+    }
+      
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* heads-up */
+
+    .heads-up {
+        position: fixed;
+
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        z-index: 999;
+    }
+
+    .card-heads-up {
+        padding: 30px;
+    }
+
+    .btn-heads-up {
+        text-transform: lowercase !important;
+    }
+
+    .fade-out {
+        animation: fade .5s;
+        -webkit-animation: fade .5s;
+        -moz-animation: fade .5s;
+      }
+      
+      /* Animate opacity */
+      @keyframes fade {
+        from { opacity: 1 }
+        to { opacity: 0 }
+      }
+      @-moz-keyframes fade {
+        from { opacity: 1 }
+        to { opacity: 0 }
+      }
+      @-webkit-keyframes fade {
+        from { opacity: 1 }
+        to { opacity: 0 }
+      }
