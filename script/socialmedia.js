@@ -19,7 +19,7 @@ buttons = [
     }
 ]
 
-var container = document.getElementById('buttons');
+let container = document.getElementById('buttons');
 
 for (let button of buttons) {
     if (!button.active) continue;
@@ -45,5 +45,8 @@ for (let button of buttons) {
             </a>
         </div>`
     
-    container.innerHTML += element;
+    let newButton = document.createElement('div');
+    newButton.innerHTML = element.trim();
+    
+    container.appendChild(newButton);
 }
