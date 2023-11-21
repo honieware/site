@@ -22,7 +22,6 @@ var taglines = [
 	"goated with the sauce",
 	"the website ever made",
 	"evil and a fucked up",
-	"hearthy should be a word", // fuck off lia
 	"the bee with thigh highs and pronouns",
 	"add me in vrchat",
 	"just a little bee", // marcy
@@ -31,7 +30,14 @@ var taglines = [
 	"keep refreshing the page for free robux",
 	"rated AO",
 	"> be me  > me bee",
-	"don't check the page's uptime"
+	"don't check the page's uptime",
+	"now with even more honey!",
+	"now with additional commission slots!", //commissions
+	"pro tip: don't die",
+	"did you know that honie backwards is einoh? did you?",
+	"new reto coming soon i pinky pwomise",
+	"guru meditation",
+	"i'm a teapot"
 ];
 
 let randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
