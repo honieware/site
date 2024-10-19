@@ -1,5 +1,5 @@
 const container = document.getElementById('carousel');
-container.scrollLeft = 0;
+container.scrollLeft = 130;
 
 // Scroll with buttons
 

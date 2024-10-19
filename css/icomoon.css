@@ -28,3 +28,7 @@
 .icon-newgrounds:before {
   content: "\e900";
 }
+
+.icon-bsky:before {
+  content: "\e901";
+}
