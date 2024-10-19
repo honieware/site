@@ -38,7 +38,8 @@ var taglines = [
 	"new reto coming soon i pinky pwomise",
 	"guru meditation",
 	"i'm a teapot",
-	"hola sofly!!!!"
+	"hola sofly!!!!",
+	"lego legolas"
 ];
 
 let randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
