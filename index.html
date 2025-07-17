@@ -11,10 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Font Awesome -->
-	<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-	rel="stylesheet"
-	/>
+	<script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+
 	<!-- Google Fonts -->
 	<link
 	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -99,56 +97,82 @@
 				<div class="container">
 					<!-- Social Media -->
 					<div class="social-view">
+						<!-- Always visible socials -->
 						<div class="socials socials-art">
-							<span class="socials-tag socials-art">art</span>
-							<a href="https://twitter.com/honiemun" data-mdb-tooltip-init title="the best hellsite to stumble upon my drawings on">
-								<i class="fab fa-twitter fa-3x socials-icon-art hvr-buzz-out"></i>
-							</a>
-							<a href="https://honiemun.newgrounds.com" data-mdb-tooltip-init title="the gallery! every major piece, chronologically sorted">
-								<i class="icon-newgrounds fa-3x socials-icon-art hvr-buzz-out"></i>
-							</a>
-							<!--
-							<a href="https://bsky.social/profile/honiemun.com" data-mdb-tooltip-init title="trying to use this site a little more">
-								<i class="icon-bsky fa-3x socials-icon-art hvr-buzz-out"></i>
-							</a>
-							-->
-							<a href="https://instagram.com/honiemun" data-mdb-tooltip-init title="only safe for work pieces, ever-slightly inactive">
-								<i class="fab fa-instagram fa-3x socials-icon-art hvr-buzz-out"></i>
-							</a>
+						  <span class="socials-tag socialsF-art">art</span>
+						  <a href="https://honiemun.newgrounds.com" data-mdb-tooltip-init title="the gallery! every major piece, chronologically sorted">
+							<i class="icon-newgrounds socials-icon-art hvr-buzz-out" style="font-size: 48px;"></i>
+						  </a>
+						  <a href="https://twitter.com/honiemun" data-mdb-tooltip-init title="the worst hellsite to stumble upon my drawings on">
+							<iconify-icon icon="streamline:twitter-solid" width="40" height="40" class="socials-icon-art hvr-buzz-out"></iconify-icon>
+						  </a>
+						  <a href="https://bsky.social/profile/honiemun.com" data-mdb-tooltip-init title="trying to use this site a little more">
+							<iconify-icon icon="ri:bluesky-fill" width="40" height="40" class="socials-icon-art hvr-buzz-out"></iconify-icon>
+						  </a>
+						  <a href="https://instagram.com/honiemun" data-mdb-tooltip-init title="only safe for work pieces, ever-slightly inactive">
+							<iconify-icon icon="ri:instagram-fill" width="40" height="40" class="socials-icon-art hvr-buzz-out"></iconify-icon>
+						  </a>
 						</div>
+
+						<div class="socials socials-games">
+						  <span class="socials-tag socials-games">games</span>
+						  <a href="https://honieware.itch.io/" data-mdb-tooltip-init title="game jam projects, nsfw or not">
+							<iconify-icon icon="fa6-brands:itch-io" width="40" height="40" class="hvr-buzz-out socials-icon-games"></iconify-icon>
+						  </a>
+						</div>
+					  
 						<div class="socials socials-media">
-							<span class="socials-tag socials-art">social</span>
-							<a href="https://twitter.com/tastelikehonie" data-mdb-tooltip-init title="shower thoughts and unhinged textposts">
-								<i class="fab fa-twitter fa-3x socials-icon-media hvr-buzz-out"></i>
-							</a>
-							<a href="https://hideout.honiemun.com" data-mdb-tooltip-init title="mostly reblogs, with some hidden post nuggets along the rubble">
-								<i class="fab fa-tumblr fa-3x socials-icon-media hvr-buzz-out"></i>
-							</a>
+						  <span class="socials-tag socials-art">social</span>
+						  <a href="https://hideout.honiemun.com" data-mdb-tooltip-init title="journaling but awesome">
+							<iconify-icon icon="ri:bluesky-fill" width="40" height="40" class="socials-icon-media hvr-buzz-out"></iconify-icon>
+						  </a>
+						  <a href="https://twitter.com/tastelikehonie" data-mdb-tooltip-init title="shower thoughts and unhinged textposts">
+							<iconify-icon icon="streamline:twitter-solid" width="40" height="40" class="socials-icon-media hvr-buzz-out"></iconify-icon>
+						  </a>
 						</div>
-						<div class="socials socials-videos">
-							<span class="socials-tag socials-videos">streams</span>
-							<a href="https://www.twitch.tv/honiemun" data-mdb-tooltip-init title="sometimes i do event streams, mostly for my discord server. catch 'em here">
-								<i class="fab fa-twitch fa-3x socials-icon-videos hvr-buzz-out"></i>
-							</a>
-							<a href="https://www.youtube.com/@honiemun" data-mdb-tooltip-init title="project and event trailers, plus a vod archival for twitch">
-								<i class="fab fa-youtube fa-3x socials-icon-videos hvr-buzz-out"></i>
-							</a>
+					  
+						<!-- Toggle button for extra socials -->
+						<button id="toggleExtraSocials" class="btn btn-secondary" style="margin: 0 8px;">+</button>
+					  
+						<!-- Extra socials (marked with the extra-socials class) -->
+						<div class="socials socials-videos extra-socials">
+						  <span class="socials-tag socials-videos">video</span>
+						  <a href="https://www.twitch.tv/honiemun" data-mdb-tooltip-init title="sometimes i do event streams, mostly for my discord server. catch 'em here">
+							<iconify-icon icon="bxl:twitch" width="40" height="40" class="hvr-buzz-out socials-icon-videos"></iconify-icon>
+						  </a>
+						  <a href="https://www.youtube.com/@honiemun" data-mdb-tooltip-init title="project and event trailers, plus a vod archival for twitch">
+							<iconify-icon icon="iconoir:youtube-solid" width="40" height="40" class="hvr-buzz-out socials-icon-videos"></iconify-icon>
+						  </a>
 						</div>
-						<div class="socials socials-code">
-							<span class="socials-tag socials-code">code</span>
-							<a href="https://honieware.itch.io/" data-mdb-tooltip-init title="bite sized, experimental browser games, mostly for game jams">
-								<i class="fab fa-itch-io fa-3x socials-icon-code hvr-buzz-out"></i>
-							</a>
-							<a href="https://github.com/honieware" data-mdb-tooltip-init title="open source code projects">
-								<i class="fab fa-github fa-3x socials-icon-code hvr-buzz-out"></i>
-							</a>
+						
+						<div class="socials socials-code extra-socials">
+						  <span class="socials-tag socials-code">code</span>
+						  <a href="https://github.com/honieware" data-mdb-tooltip-init title="open source code projects">
+							<iconify-icon icon="entypo-social:github" width="40" height="40" class="hvr-buzz-out socials-icon-code"></iconify-icon>
+						  </a>
 						</div>
-					</div>
+					  </div>
+					  
+					  
+						  
 
 					<!-- Huge Button -->
 					
 					
-					<!-- RETO -->
+					<!-- BUILD A BROTHEL -->
+					<div class="col-md-12">
+						<a href="https://honieware.itch.io/brothel">
+							<div class="card bg-dark text-white image-container">
+								<img class="card-img img-fluid headliner-card" src="images/capsule-art-nogirl.png" alt="Card image">
+								
+								<div class="card-img-overlay d-flex flex-column">
+									<h1 class="card-title mt-auto">build a brothel</h1>
+									<p class="card-text">find your clients' kinks & create a whorehouse empire. entry for strawberry jam</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!--
 					<div class="col-md-12">
 						<a href="https://retobot.com/">
 							<div class="card bg-dark text-white image-container">
@@ -156,11 +180,12 @@
 								
 								<div class="card-img-overlay d-flex flex-column">
 									<h1 class="card-title mt-auto">reto</h1>
-									<p class="card-text">a karma and starboard bot for the modern era. launching in 2024</p>
+									<p class="card-text">a karma and starboard bot for the modern era. launching in 2025</p>
 								</div>
 							</div>
 						</a>
 					</div>
+					-->
 
 					<!-- EDIT COMMS -->
 					<!--
@@ -287,6 +312,19 @@
 
 								<img src="images/legolas.png" alt="legolas" class="legolas">
 
+								<!-- RETO -->
+								<div class="item">
+									<a href="https://retobot.com/">
+										<div class="card bg-dark text-white image-container">
+											<img class="card-img-item card-gradient headliner-card" src="images/retool.png" alt="Card image">
+											<div class="card-img-overlay d-flex flex-column">
+												<h2 class="card-title mt-auto">reto</h2>
+												<p class="card-text">karma & starboard for the modern era</p>
+											</div>
+										</div>
+									</a>
+								</div>
+
 								<!-- COMMISIONS -->
 								<div class="item">
 									<a href="https://github.com/honieware/reto-legacy">
@@ -294,20 +332,7 @@
 											<img class="card-img-item card-gradient headliner-card" src="images/comms-small.png" alt="Card image">
 											<div class="card-img-overlay d-flex flex-column">
 												<h2 class="card-title mt-auto">drawing comms</h2>
-												<p class="card-text">get a custom drawing at my ko-fi page</p>
-											</div>
-										</div>
-									</a>
-								</div>
-
-								<!-- RETO -->
-								<div class="item">
-									<a href="https://github.com/honieware/reto-legacy">
-										<div class="card bg-dark text-white image-container">
-											<img class="card-img-item card-gradient headliner-card" src="images/reto.png" alt="Card image">
-											<div class="card-img-overlay d-flex flex-column">
-												<h2 class="card-title mt-auto">reto legacy</h2>
-												<p class="card-text">open source version of reto</p>
+												<p class="card-text">throw a coin, get a drawin'!</p>
 											</div>
 										</div>
 									</a>
@@ -365,6 +390,19 @@
 									</a>
 								</div>
 
+								<!-- RETO LEGACY -->
+								<div class="item">
+									<a href="https://github.com/honieware/reto-legacy">
+										<div class="card bg-dark text-white image-container">
+											<img class="card-img-item card-gradient headliner-card" src="images/reto.png" alt="Card image">
+											<div class="card-img-overlay d-flex flex-column">
+												<h2 class="card-title mt-auto">reto legacy</h2>
+												<p class="card-text">open source version of reto</p>
+											</div>
+										</div>
+									</a>
+								</div>
+
 								<!-- HONIE EDIT FOLDER -->
 								<!--
 								<div class="item censored">
@@ -417,7 +455,28 @@
 	<script src="script/adult.js"></script>
 	<script src="script/toggle.js"></script>
 	<script src="script/timestamp.js"></script>
-	
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		  const toggleBtn = document.getElementById('toggleExtraSocials');
+		  const extraSocials = document.querySelectorAll('.extra-socials');
+	  
+		  // Optionally, ensure they start hidden via inline style (not strictly necessary if CSS is loaded)
+		  extraSocials.forEach(el => el.style.display = 'none');
+	  
+		  toggleBtn.addEventListener('click', function() {
+			// Use getComputedStyle to determine the current display value
+			let isVisible = window.getComputedStyle(extraSocials[0]).display === 'flex';
+	  
+			extraSocials.forEach(function(el) {
+			  el.style.display = isVisible ? 'none' : 'flex';
+			});
+	  
+			toggleBtn.textContent = isVisible ? '+' : '-';
+		  });
+		});
+	  </script>
+	  
+	  
 	<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 	<script>
 	kofiWidgetOverlay.draw('honie', {

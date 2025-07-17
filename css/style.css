@@ -182,9 +182,11 @@ body {
 /* Socials */
 
 .social-view {
-    width:100%;
     display: flex;
+    position: relative;
     justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
 }
 
 .social-view > * {
@@ -219,7 +221,7 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-.socials i {
+.socials i, .socials iconify-icon {
     color: rgb(182, 62, 14);
 }
 
@@ -231,7 +233,7 @@ body {
 /* Social categories */
 
 .socials-art:hover  {
-    border-color: #801df2;
+    border-color: #801df2 !important;
 }
 
 .socials-art:hover span {
@@ -240,46 +242,60 @@ body {
 }
 
 .socials-icon-art:hover {
-    color: #801df2;
+    color: #801df2 !important;
 }
 
 .socials-media:hover  {
-    border-color: #f27d1d;
+    border-color: #f27d1d !important;
 }
 
 .socials-media:hover span {
-    background-color: #f27d1d;
+    background-color: #f27d1d !important;
     color: white;
 }
 
 .socials-icon-media:hover {
-    color: #f27d1d;
+    color: #f27d1d !important;
 }
 
 .socials-videos:hover  {
-    border-color: #f21d41;
+    border-color: #f21d41 !important;
 }
 
 .socials-videos:hover span {
-    background-color: #f21d41;
+    background-color: #f21d41 !important;
     color: white;
 }
 
 .socials-icon-videos:hover {
-    color: #f21d41;
+    color: #f21d41 !important;
 }
 
 .socials-code:hover  {
-    border-color: #8d837b;
+    border-color: #8d837b !important;
 }
 
 .socials-code:hover span {
-    background-color: #8d837b;
+    background-color: #8d837b !important;
     color: white;
 }
 
 .socials-icon-code:hover {
-    color: #8d837b;
+    color: #8d837b !important;
+}
+
+
+.socials-games:hover  {
+    border-color: #4cd66f !important;
+}
+
+.socials-games:hover span {
+    background-color: #4cd66f !important;
+    color: white;
+}
+
+.socials-icon-games:hover {
+    color: #4cd66f !important;
 }
 
 /* shiny button */
@@ -597,3 +613,21 @@ body {
     margin-bottom: auto;
 
 }
+
+.extra-socials {
+    display: none;
+  }
+  
+  
+  .extra-socials.show {
+    display: flex;
+  }
+  
+  #toggleExtraSocials {
+    position: absolute;
+    right: 0;         /* Always at the right edge */
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;        /* Remove any extra margin if needed */
+    z-index: 10;      /* Ensure it's above the other items */
+  }

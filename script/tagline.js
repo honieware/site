@@ -37,7 +37,10 @@ var taglines = [
 	"did you know that honie backwards is einoh? did you?",
 	"new reto coming soon i pinky pwomise",
 	"guru meditation",
-	"i'm a teapot"
+	"i'm a teapot",
+	"bring back the old web!",
+	"soon to be on neocities",
+	"this site is begging for a revamp"
 ];
 
 let randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
